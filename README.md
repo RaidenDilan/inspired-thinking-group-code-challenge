@@ -11,7 +11,7 @@
 Fork with `git`:
 
 ```sh
-git clone https://github.com/RaidenDilan/inspired-thinking-group.git
+git clone https://github.com/RaidenDilan/inspired-thinking-group-code-challenge.git
 ```
 cd into project folder:
 
