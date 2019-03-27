@@ -1,0 +1,116 @@
+{
+  "name": "inspired-thinking-group",
+  "version": "1.0.0",
+  "description": "inspired-thinking-group",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "bower install && gulp deploy",
+    "start": "node server.js",
+    "test": "mocha tests/**/*.js --exit"
+  },
+  "author": "Raiden Dilan <raiden18@me.com> (https://github.com/raidendilan)",
+  "license": "ISC",
+  "gulp": {
+    "srcDir": "src/",
+    "destDir": "public/",
+    "testDir": "test/",
+    "src": {
+      "js": "src/js/",
+      "scss": "src/scss/",
+      "fonts": "src/fonts/",
+      "images": "src/images/"
+    },
+    "dest": {
+      "js": "public/js/",
+      "css": "public/css/",
+      "fonts": "public/fonts/",
+      "images": "public/images/"
+    },
+    "main": {
+      "js": "app.js",
+      "index": "index.html",
+      "scss": "style.scss",
+      "server": "server.js",
+      "gulpfile": "gulpfile.js",
+      "packageJson": "package.json"
+    },
+    "vendor": {
+      "js": "vendor.js",
+      "css": "vendor.css"
+    },
+    "output": {
+      "js": "app.js",
+      "css": "style.css"
+    },
+    "selectors": {
+      "all": "*",
+      "js": "**/*.js",
+      "css": "**/*.css",
+      "scss": "**/*.scss",
+      "html": "**/*.html",
+      "images": "**/*.{png,jpg,jpeg,gif,ico}",
+      "fonts": "**/*.{eot,svg,ttf,woff,woff2}"
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai-http": "^3.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.18.0",
+    "bower": "^1.8.0",
+    "browser-sync": "^2.26.3",
+    "chai": "^4.2.0",
+    "event-stream": "^4.0.1",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlhint": "^2.2.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inject": "4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-order": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-comments": "2.5.2",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-stylelint": "8.0.0",
+    "gulp-uglify": "^3.0.2",
+    "htmlhint-stylish": "^1.0.3",
+    "jshint": "^2.10.1",
+    "jshint-stylish": "^2.2.1",
+    "karma": "^4.0.1",
+    "karma-chai": "0.1.0",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha": "1.3.0",
+    "live-server": "^1.2.1",
+    "main-bower-files": "^2.13.1",
+    "mocha": "^6.0.2",
+    "require-dir": "^1.2.0",
+    "selenium-webdriver": "3.6.0",
+    "should": "^13.2.3",
+    "stylelint": "9.10.1",
+    "stylelint-formatter-pretty": "1.0.3",
+    "supertest": "^3.4.2"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="vehicleApp">
+  <head>
+    <base href="/">
+    <title>Inspired Thinking Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- inject:js -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body ng-controller="MainCtrl as main">
+
+    <header>
+      <nav class="container">
+        <ul>
+          <li class="logo"><a ui-sref="vehiclesIndex">Inspired Thinking Group</a></li>
+          <li class="burger" ng-click="main.navIsOpen = !main.navIsOpen">&#9776;</li>
+          <div class="dropdown" ng-class="{ 'open': main.navIsOpen }">
+            <li><a ui-sref="vehiclesIndex" ui-sref-active="active">Vehicles</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="message" ng-if="main.message">
+      <p>{{ main.message }}</p>
+    </div>
+
+    <main ui-view></main>
+    
+  </body>
+</html>

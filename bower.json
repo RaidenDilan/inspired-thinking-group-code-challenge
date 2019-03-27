@@ -1,0 +1,30 @@
+{
+  "name": "inspired-thinking-group",
+  "main": "server.js",
+  "description": "inspired-thinking-group",
+  "authors": [
+    "Raiden Dilan <raiden18@me.com> (https://github.com/raidendilan)"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-animate": "^1.6.3",
+    "angular-bootstrap": "^2.5.0",
+    "angular-messages": "^1.6.3",
+    "angular-resource": "^1.6.3",
+    "angular-ui-router": "0.4.2",
+    "angular-mocks": "^1.7.8",
+    "bootstrap-css-only": "^3.3.7"
+  },
+  "resolutions": {
+    "angular": "^1.6.3"
+  }
+}

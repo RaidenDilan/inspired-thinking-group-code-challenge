@@ -1,0 +1,15 @@
+<section class="vehiclesIndex">
+  <ul ng-repeat="vehicle in vehiclesIndex.allCars">
+
+    <li ng-repeat="(key, value) in vehicle.media">
+      <div ng-style="{'background-image':'url({{ value.url }})'}" class="vehicleImg"></div>
+    </li>
+
+    <div class="specs">
+      <li>{{ vehicle.id }}</li>
+      <li>From {{ vehicle.price }}</li>
+      <li>{{ vehicle.description }}</li>
+      <!-- <li><a ui-sref="vehiclesShow({ id: vehicle.id })" class="button">Show Vehicle</a></li> -->
+    </div>
+  </ul>
+</section>
